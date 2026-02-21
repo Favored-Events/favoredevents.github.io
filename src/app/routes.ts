@@ -1,0 +1,29 @@
+import { createBrowserRouter } from "react-router";
+import { Home } from "./pages/Home";
+import { EngagementProposals } from "./pages/EngagementProposals";
+import { LuxuryEventDecor } from "./pages/LuxuryEventDecor";
+import { Gallery } from "./pages/Gallery";
+import { Photography } from "./pages/Photography";
+
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    Component: Home,
+  },
+  {
+    path: "/engagement-proposals",
+    Component: EngagementProposals,
+  },
+  {
+    path: "/luxury-event-decor",
+    Component: LuxuryEventDecor,
+  },
+  {
+    path: "/photography",
+    Component: Photography,
+  },
+  {
+    path: "/gallery",
+    Component: Gallery,
+  },
+]);
