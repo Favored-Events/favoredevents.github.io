@@ -13,7 +13,7 @@ export default defineConfig({
   // Set base path for GitHub Pages deployment
   // If deploying to https://<username>.github.io/, leave base as '/'
   // If deploying to https://<username>.github.io/<repo-name>/, set base to '/<repo-name>/'
-  base: '/favoredevents.github.io/',
+  base: '/',
   resolve: {
     alias: {
       // Alias @ to the src directory
