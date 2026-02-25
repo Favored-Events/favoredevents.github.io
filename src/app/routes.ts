@@ -5,6 +5,7 @@ import { LuxuryEventDecor } from "./pages/LuxuryEventDecor";
 import { Gallery } from "./pages/Gallery";
 import { Photography } from "./pages/Photography";
 
+// Use import.meta.env.BASE_URL which Vite provides automatically
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -26,4 +27,6 @@ export const router = createBrowserRouter([
     path: "/gallery",
     Component: Gallery,
   },
-]);
+], {
+  basename: import.meta.env.BASE_URL
+});
